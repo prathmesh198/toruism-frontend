@@ -14,13 +14,13 @@ export default function RegisterScreen() {
     
     try {
       // 1. Register the user
-      await axios.post('https://tourism-backend-2-irj7.onrender.com/api/register/', {
+      await axios.post('https://toruism-frontend-eo2n.vercel.app/api/register/', {
         username,
         password
       });
       
       // 2. Automatically log them in after registration
-      const loginResponse = await axios.post('https://tourism-backend-2-irj7.onrender.com/api/login/', {
+      const loginResponse = await axios.post('https://toruism-frontend-eo2n.vercel.app/api/login/', {
         username,
         password
       });

@@ -14,7 +14,7 @@ export default function ExploreScreen() {
 
   const fetchDestinations = async () => {
     try {
-      const response = await axios.get(`https://tourism-backend-2-irj7.onrender.com/api/destinations/?search=${searchQuery}`);
+      const response = await axios.get(`https://toruism-frontend-eo2n.vercel.app/api/destinations/?search=${searchQuery}`);
       setDestinations(response.data);
       setLoading(false);
     } catch (err) {

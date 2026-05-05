@@ -16,11 +16,11 @@ export default function DestinationDetailScreen() {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const destResponse = await axios.get(`https://tourism-backend-2-irj7.onrender.com/api/destinations/${id}/`);
+        const destResponse = await axios.get(`https://toruism-frontend-eo2n.vercel.app/api/destinations/${id}/`);
         setDestination(destResponse.data);
 
         // Fetch forecast data
-        const forecastResponse = await axios.get('https://tourism-backend-2-irj7.onrender.com/api/forecast/');
+        const forecastResponse = await axios.get('https://toruism-frontend-eo2n.vercel.app/api/forecast/');
         setForecast(forecastResponse.data);
 
         setLoading(false);
