@@ -14,13 +14,13 @@ export default function RegisterScreen() {
     
     try {
       // 1. Register the user
-      await axios.post('https://toruism-frontend-eo2n.vercel.app/api/register/', {
+      await axios.post(' http://127.0.0.1:8000/api/register/', {
         username,
         password
       });
       
       // 2. Automatically log them in after registration
-      const loginResponse = await axios.post('https://toruism-frontend-eo2n.vercel.app/api/login/', {
+      const loginResponse = await axios.post(' http://127.0.0.1:8000/api/login/', {
         username,
         password
       });

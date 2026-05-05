@@ -16,11 +16,11 @@ export default function DestinationDetailScreen() {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const destResponse = await axios.get(`https://tourism-backend-pi.vercel.app/api/destinations/${id}/`);
+        const destResponse = await axios.get(` http://127.0.0.1:8000/api/destinations/${id}/`);
         setDestination(destResponse.data);
 
         // Fetch forecast data
-        const forecastResponse = await axios.get('https://tourism-backend-pi.vercel.app/api/forecast/');
+        const forecastResponse = await axios.get(' http://127.0.0.1:8000//api/forecast/');
         setForecast(forecastResponse.data);
 
         setLoading(false);

@@ -12,7 +12,7 @@ export default function DashboardScreen() {
 
   const fetchForecast = async () => {
     try {
-      const response = await axios.get('https://tourism-backend-pi.vercel.app/api/forecast/');
+      const response = await axios.get(' http://127.0.0.1:8000/api/forecast/');
       setForecast(response.data);
       setLoading(false);
     } catch (err) {

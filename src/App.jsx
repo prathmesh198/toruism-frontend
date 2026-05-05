@@ -39,7 +39,7 @@ function Layout({ children }) {
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        await axios.post('https://tourism-backend-pi.vercel.app/api/logout/', {}, {
+        await axios.post(' http://127.0.0.1:8000/api/logout/', {}, {
           headers: {
             'Authorization': `Token ${token}`
           }
