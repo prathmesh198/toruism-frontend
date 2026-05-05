@@ -13,7 +13,7 @@ export default function LoginScreen() {
     setError('');
     
     try {
-      const response = await axios.post('https://toruism-frontend-eo2n.vercel.app/api/login/', {
+      const response = await axios.post('https://tourism-backend-pi.vercel.app/api/login/', {
         username,
         password
       });
