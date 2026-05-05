@@ -13,7 +13,7 @@ export default function LoginScreen() {
     setError('');
     
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/login/', {
+      const response = await axios.post('https://tourism-backend-2-irj7.onrender.com/api/login/', {
         username,
         password
       });
