@@ -16,11 +16,11 @@ export default function DestinationDetailScreen() {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const destResponse = await axios.get(` http://127.0.0.1:8000/api/destinations/${id}/`);
+        const destResponse = await axios.get(` https://tourist-backend-j0qo.onrender.com/api/destinations/${id}/`);
         setDestination(destResponse.data);
 
         // Fetch forecast data
-        const forecastResponse = await axios.get(' http://127.0.0.1:8000//api/forecast/');
+        const forecastResponse = await axios.get('https://tourist-backend-j0qo.onrender.com/api/forecast/');
         setForecast(forecastResponse.data);
 
         setLoading(false);
