@@ -14,7 +14,7 @@ export default function ExploreScreen() {
 
   const fetchDestinations = async () => {
     try {
-      const response = await axios.get(` http://127.0.0.1:8000/api/destinations/?search=${searchQuery}`);
+      const response = await axios.get(`https://tourist-backend-j0qo.onrender.com/api/destinations/?search=${searchQuery}`);
       setDestinations(response.data);
       setLoading(false);
     } catch (err) {
