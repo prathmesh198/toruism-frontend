@@ -12,7 +12,7 @@ export default function DashboardScreen() {
 
   const fetchForecast = async () => {
     try {
-      const response = await axios.get(' https://tourist-backend-j0qo.onrender.com/api/forecast/');
+      const response = await axios.get('https://tourist-backend-j0qo.onrender.com/api/forecast/');
       setForecast(response.data);
       setLoading(false);
     } catch (err) {
