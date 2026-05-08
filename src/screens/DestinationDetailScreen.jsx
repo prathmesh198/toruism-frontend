@@ -16,7 +16,7 @@ export default function DestinationDetailScreen() {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const destResponse = await axios.get(` https://tourist-backend-j0qo.onrender.com/api/destinations/${id}/`);
+        const destResponse = await axios.get(`https://tourist-backend-j0qo.onrender.com/api/destinations/${id}/`);
         setDestination(destResponse.data);
 
         // Fetch forecast data
