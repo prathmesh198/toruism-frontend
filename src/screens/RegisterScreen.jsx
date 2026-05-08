@@ -14,13 +14,13 @@ export default function RegisterScreen() {
     
     try {
       // 1. Register the user
-      await axios.post(' https://tourist-backend-j0qo.onrender.com/api/register/', {
+      await axios.post('https://tourist-backend-j0qo.onrender.com/api/register/', {
         username,
         password
       });
       
       // 2. Automatically log them in after registration
-      const loginResponse = await axios.post(' https://tourist-backend-j0qo.onrender.com/api/login/', {
+      const loginResponse = await axios.post('https://tourist-backend-j0qo.onrender.com/api/login/', {
         username,
         password
       });
